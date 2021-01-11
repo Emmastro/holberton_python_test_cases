@@ -66,3 +66,21 @@ Now use it:
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer
+
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(2)
+    100
+
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+        ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('-inf'))
+    Traceback (most recent call last):
+        ...
+    OverflowError: cannot convert float infinity to integer
